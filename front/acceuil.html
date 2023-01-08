@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="container">
+        <span class="image">
+            <img width="100%" src="img/left_bookshelf.PNG" alt="image">
+        </span>
+
+        <div class="header">
+
+            <span>
+                <img class="header-image" src="img/logo_mbc.PNG" alt="image" width="">
+            </span>
+            <div class="header_right">
+                <span>
+                    <div class="header-menu">
+                        <a href="#"><img src="img/traits_menu.PNG" alt="traits violets"></a><br>
+                        <a href="#">Menu item 1</a><br>
+                        <a href="#">Menu item 2</a><br>
+                        <a href="#">Menu item 3</a><br>
+                    </div>
+                </span>
+                <div class="header-buttons">
+                    <button class="header-button"> </button>
+                    <button class="header-button"> </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+
+<style>
+    body {
+        background-color: rgb(245, 245, 245);
+        margin: 0px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .image {
+        width: 40%;
+    }
+
+    .gros_texte {
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-right: 10%
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .header-image {
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .header_right {
+        display: flex;
+        align-items: row;
+        justify-content: space-heavenly;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .header-buttons {
+        display: flex;
+        justify-content: space-heavenly;
+        width: 100%
+    }
+
+    .header:hover {
+        cursor: pointer;
+    }
+
+    .header-button {
+        width: 45%;
+        height: 50%;
+        background-color: rgb(162, 112, 162);
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header-menu {
+        overflow: auto;
+        height: 30px;
+        transition: height 0.5s;
+    }
+
+    .header-menu:hover {
+        height: 100px;
+    }
+</style>

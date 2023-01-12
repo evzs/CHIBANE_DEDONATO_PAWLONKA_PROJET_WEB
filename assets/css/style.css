@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bookshelf {
+    height: 90%;
+    width: 20%;
+    border: solid 2px blue;
+}
+
+.side {
+    height: 90%;
+    width: 80%;
+    border: solid 2px yellow;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70%;
+    border: solid 2px red;
+}
+
+.logo {
+    height: fit-content;
+    width: fit-content;
+    border: solid 3px rgb(166, 255, 166);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.buttons div {
+    height: fit-content;
+    width: fit-content;
+    border: solid 3px rgb(4, 255, 4);
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: auto;
+    border: solid 2px green;
+}
+
+.title {
+    height: fit-content;
+    width: fit-content;
+    border: solid 3px rgb(166, 255, 166);
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    border: solid 2px red;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 100%;
+    border: solid 2px red;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .bookshelf {
+        display: none;
+    }
+    .side {
+        height: 80%;
+        width: 100%;
+    }
+    .nav {
+        flex-direction: column;
+        gap: 0;
+    }
+    .logo {
+        height: fit-content;
+        width: fit-content;
+        border: solid 3px rgb(166, 255, 166);
+    }
+    .buttons {
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+        border: solid 3px rgb(4, 255, 4);
+    }
+    .buttons>div {
+        height: fit-content;
+        width: fit-content;
+        border: solid 3px rgb(4, 255, 4);
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: auto;
+        border: solid 2px green;
+    }
+    .title {
+        height: fit-content;
+        width: fit-content;
+        border: solid 3px rgb(166, 255, 166);
+    }
+    .content {
+        height: 100%;
+        width: 100%;
+        border: solid 2px red;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 10%;
+        width: 100%;
+        border: solid 2px red;
+    }
+}

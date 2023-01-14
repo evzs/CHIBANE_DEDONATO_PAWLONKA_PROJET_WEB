@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800');
 
 * {
     box-sizing: border-box;
@@ -91,7 +91,7 @@ body {
     border: solid 2px red;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 767px) {
     .container {
         flex-direction: column;
     }

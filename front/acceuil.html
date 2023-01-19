@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <span class="image">
-            <img width="100%" src="img/left_bookshelf.PNG" alt="image">
+            <img width="100%" height="100%" src="img/left_bookshelf.PNG" alt="image">
         </span>
 
         <div class="header">
@@ -17,22 +17,13 @@
                 <img class="header-image" src="img/logo_mbc.PNG" alt="image" width="">
             </span>
             <div class="header_right">
-                <span>
-                    <div class="header-menu">
-                        <a href="#"><img src="img/traits_menu.PNG" alt="traits violets"></a><br>
-                        <a href="#">Menu item 1</a><br>
-                        <a href="#">Menu item 2</a><br>
-                        <a href="#">Menu item 3</a><br>
-                    </div>
-                </span>
                 <div class="header-buttons">
-                    <button class="header-button"> </button>
-                    <button class="header-button"> </button>
+                    <button class="header-button"> Login </button>
+                    <button class="header-button" onclick="window.location.href='biblio_final.html';"> Biblio </button>
                 </div>
             </div>
         </div>
-
-
+        <div id="welcome">Boujour, <br>bienvenue sur notre site. <br> <br> Ce dernier a été développé par k.Pawlonka, E.Chibanne et T.Dedonato et a pour but de garder une trace des lectures de son utilisateur.</div>
     </div>
 </body>
 
@@ -41,9 +32,10 @@
 
 <style>
     body {
-        background-color: rgb(245, 245, 245);
+        background-color: aliceblue;
         margin: 0px;
     }
+
 
     .container {
         display: flex;
@@ -51,15 +43,15 @@
 
     .image {
         width: 40%;
+        height: 100vh;
     }
-
-    .gros_texte {
-        font-size: 50px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        margin-top: 20%;
-        margin-left: 10%;
-        margin-right: 10%
+    #welcome {
+        position: absolute;
+        margin-left: 40%;
+        margin-right: 10%;
+        margin-top: 120px;
+        height: 100%;
+        font-size: 5vh;
     }
 
     .header {
@@ -88,11 +80,8 @@
         width: 100%
     }
 
-    .header:hover {
-        cursor: pointer;
-    }
-
     .header-button {
+        color: aliceblue;
         width: 45%;
         height: 50%;
         background-color: rgb(162, 112, 162);
@@ -103,6 +92,12 @@
         border: none;
         cursor: pointer;
     }
+    .header-button:hover {
+        background-color: rgb(115, 79, 115);
+        transition: 0.5s;
+    }
+
+    
 
     .header-menu {
         overflow: auto;

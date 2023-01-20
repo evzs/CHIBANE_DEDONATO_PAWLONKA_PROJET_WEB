@@ -2,34 +2,110 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-    <title>MBC</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+
 </head>
 
 <body>
     <div class="container">
-        <div class="bookshelf"></div>
-        <div class="side">
-            <div class="nav">
-                <div class="logo">logo</div>
-                <div class="buttons">
-                    <div>menu</div>
-                    <a href="./login.html">Log in</a>
-                    <a href="./register.html">Register</a>
+        <span class="image">
+            <img width="100%" height="100%" src="../assets/img/left_bookshelf.PNG" alt="image">
+        </span>
+
+        <div class="header">
+
+            <span>
+                <img class="header-image" src="../assets/img/logo_mbc.PNG" alt="image" width="">
+            </span>
+            <div class="header_right">
+                <div class="header-buttons">
+                    <button class="header-button" onclick="window.location.href='login.html';"> Login </button>
+                    <button class="header-button" onclick="window.location.href='biblio_final.html';"> Biblio </button>
                 </div>
             </div>
-            <div class="main">
-                <div class="title">MY<br>BOOK<br>COLLECTION</div>
-                <div class="content">LOREM IPSUM MACHIN TRUC BIDULE</div>
-            </div>
         </div>
-        <div class="footer"></div>
+        <div id="welcome">Boujour, <br>bienvenue sur notre site. <br> <br> Ce dernier a été développé par k.Pawlonka, E.Chibanne et T.Dedonato et a pour but de garder une trace des lectures de son utilisateur.</div>
     </div>
-
 </body>
 
-
 </html>
+
+
+<style>
+    body {
+        background-color: aliceblue;
+        margin: 0px;
+    }
+
+
+    .container {
+        display: flex;
+    }
+
+    .image {
+        width: 40%;
+        height: 100vh;
+    }
+    #welcome {
+        position: absolute;
+        margin-left: 40%;
+        margin-right: 10%;
+        margin-top: 120px;
+        height: 100%;
+        font-size: 5vh;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        width: 100%;
+    }
+
+    .header-image {
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .header_right {
+        display: flex;
+        align-items: row;
+        justify-content: space-heavenly;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .header-buttons {
+        display: flex;
+        justify-content: space-heavenly;
+        width: 100%
+    }
+
+    .header-button {
+        color: aliceblue;
+        width: 45%;
+        height: 50%;
+        background-color: rgb(162, 112, 162);
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+    }
+    .header-button:hover {
+        background-color: rgb(115, 79, 115);
+        transition: 0.5s;
+    }
+
+    
+
+    .header-menu {
+        overflow: auto;
+        height: 30px;
+        transition: height 0.5s;
+    }
+
+    .header-menu:hover {
+        height: 100px;
+    }
+</style>

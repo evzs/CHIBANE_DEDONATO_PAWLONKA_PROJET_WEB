@@ -39,12 +39,12 @@
 
     </span>
     <span id="barre">
-        <button id="home">Menu</button>
+        <button id="home" onclick="window.location.href='acceuil.html';">Menu</button>
     </span>
     <span id="droite">
         <div id="place_livre">
-            <div class="page" id="page_gauche">synopsis</div>
-            <div class="page" id="page_droite">texte</div>
+            <div class="page" id="page_gauche"></div>
+            <div class="page" id="page_droite"></div>
         </div>
     </span>
 
@@ -102,6 +102,7 @@
         padding-top: 5%;
         padding-left: 5%;
         padding-right: 5%;
+        overflow: auto ;
         display: flex;
         justify-content: center;
     }
@@ -147,7 +148,7 @@
         border-radius: 30px;
         border-radius: 30px;
         border: none;
-
+        
     }
 
     #home:hover {
@@ -185,22 +186,38 @@
     }
 
     #books-1 {
-        background: url('https://static.wikia.nocookie.net/beluga/images/d/da/V8z0crk5gho71.webp/revision/latest?cb=20221103210216');
+        background: url('img/cover1.jpg');
         background-size: 210px 100%;
     }
 
     #books-2 {
-        background: url('https://play-lh.googleusercontent.com/KnFMQzTkrsWoyFZPDovbEGxYbrJF_37APuzIPhYCT_dAFRBKCu57sDiezvQBxoSd5s4=w240-h480-rw');
+        background: url('img/cover2.jpg');
         background-size: 210px 100%;
     }
 
     #books-3 {
-        background: url('https://ih1.redbubble.net/image.4221084955.9502/poster,504x498,f8f8f8-pad,600x600,f8f8f8.u1.jpg');
+        background: url('img/cover3.jpg');
         background-size: 210px 100%;
     }
 
-    #books- {
-        background: url('img/bureau.png');
+    #books-4 {
+        background: url('img/cover4.jpg');
+        background-size: 210px 100%;
+    }
+    #books-5 {
+        background: url('img/cover5.jpg');
+        background-size: 210px 100%;
+    }
+    #books-6 {
+        background: url('img/cover6.jpg');
+        background-size: 210px 100%;
+    }
+    #books-7 {
+        background: url('img/cover7.jpg');
+        background-size: 210px 100%;
+    }
+    #books-8 {
+        background: url('img/beluga.jpg');
         background-size: 210px 100%;
     }
 
@@ -209,8 +226,50 @@
 <script>
     $(document).ready(function () {
         $("#books-1").click(function () {
-            $("#page_gauche").html("");
-            $("#page_droite").html("");
+            $("#page_gauche").html("Auteur :<br>St Exupéry <br><br>Titre : <br>Le petit prince ");
+            $("#page_droite").html("Synopsis :<br>Le narrateur est un aviateur qui, à la suite d'une panne de moteur, a dû se poser en catastrophe dans le désert du Sahara. Il tente seul de réparer son avion. ");
+        });
+    });
+    $(document).ready(function () {
+        $("#books-2").click(function () {
+            $("#page_gauche").html("Auteur :<br>JK.Rolling <br><br>Titre :<br> Harry Potter à l'école des sorciers ");
+            $("#page_droite").html("Synopsis :<br>Harry Potter est un garçon ordinaire. Mais, le jour de ses onze ans, son existence bascule : un géant vient le chercher pour l'emmener dans une école de sorciers. ");
+        });
+    });
+    $(document).ready(function () {
+        $("#books-3").click(function () {
+            $("#page_gauche").html("Auteur :<br>Anne-Marie Cadot-Colin <br><br>Titre :<br>Lancelot du Lac ");
+            $("#page_droite").html("Synopsis :<br> Lancelot est encore un bébé une féel'enlève et l'élève secrètement dans son domaine du Lac jusqu'au jour où elle le conduit à la cour du roi Arthur pour qu'il devienne chevalier.");
+        });
+    });
+    $(document).ready(function () {
+        $("#books-4").click(function () {
+            $("#page_gauche").html("Auteur :<br>Erin Hunter <br><br>Titre :<br>La guerre des clans");
+            $("#page_droite").html("Synopsis :<br>Le parcours d'un chaton à travers l'univers des chats sauvages fait de lutte, de rivalité et de secrets terribles. Depuis des générations, quatre clans se partagent la forêt. ");
+        });
+    });
+    $(document).ready(function () {
+        $("#books-5").click(function () {
+            $("#page_gauche").html("Auteur :<br>Chu-Gong <br><br>Titre :<br>Solo Leveling ");
+            $("#page_droite").html("Synopsis :<br> Lorsque d'étranges portails sont apparus aux quatre coins du monde, l'humanité a dû trouver une parade pour ne pas finir massacrée entre les griffes des monstres qu'ils ont apportés avec eux.");
+        });
+    });
+    $(document).ready(function () {
+        $("#books-6").click(function () {
+            $("#page_gauche").html("Auteur :<br>Takahiro <br><br>Titre :<br>Mato Seihei no Slave ");
+            $("#page_droite").html("Synopsis :<br>Un jour, un lycéen nommé Yuuki Wakura se retrouve plongé dans une dimension remplie de monstres. (c'est un hentai, je le conseille XD)  ");
+        });
+    });
+    $(document).ready(function () {
+        $("#books-7").click(function () {
+            $("#page_gauche").html("Auteur :<br>Clara Lepage<br><br>Titre :<br>Les pieds de ma belle-mère ");
+            $("#page_droite").html("Synopsis :<br>Kevin est fétichiste des pieds, et son plus gros problème est de trouver une copine pour réaliser ses fantasmes. Heureusement pour lui, il va indirectement dévoiler à Eva, sa belle-mère, son secret.");
+        });
+    });
+    $(document).ready(function () {
+        $("#books-8").click(function () {
+            $("#page_gauche").html("Auteur :<br> Tony<br><br>Titre :<br>Bonjour chère correcteur ");
+            $("#page_droite").html("Synopsis :<br>Oui cette page est super responsive, pas besoin de me féliciter (à l'aide). Bon courrage pour la correction, bisous. ♥ ");
         });
     });
 
